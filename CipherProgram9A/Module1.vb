@@ -11,7 +11,7 @@
         For i = 0 To Plaintext.Length - 1
             Dim curChar = Plaintext(i)
             Dim charValue = Asc(curChar)
-            'If charValue = 32 Then
+            'If charValue = 32 Then 'Spaces only
             '    CipherText &= " "
             If charValue < Asc("A") Or charValue > Asc("Z") Then
                 CipherText &= curChar
